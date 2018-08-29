@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Student Tracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_terms">TermsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_term_form">Hello blank fragment</string>
+
+    <string-array name="course_statuses">
+        <item>Plan To Take</item>
+        <item>Registered</item>
+        <item>In Progress</item>
+        <item>Dropped</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="assessment_types">
+        <item>Performance</item>
+        <item>Objective</item>
+    </string-array>
+    <string name="title_activity_assessments">AssessmentsActivity</string>
+    <string name="title_activity_details_assessments">AssessmentDetailsActivity</string>
+    <!-- Content Descriptions -->
+    <string name="edit_term_button_cont_desc">Edit Term</string>
+    <string name="edit_action_title">Edit</string>
+    <string name="delete_action_title">Delete</string>
+    <string name="share_notes_action">Share Notes</string>
+
+</resources>

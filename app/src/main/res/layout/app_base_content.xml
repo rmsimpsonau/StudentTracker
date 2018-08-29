@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.studenttracker.activities.AppBaseActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10dp">
+
+        <ProgressBar
+            android:id="@+id/overallProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:progressTint="#b2cefe"
+            android:scaleY="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overallProgressLabel" />
+
+        <ProgressBar
+            android:id="@+id/termsProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:progressTint="#f8b88b"
+            android:scaleY="5"
+            app:layout_constraintEnd_toEndOf="@+id/overallProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/overallProgressBar"
+            app:layout_constraintTop_toBottomOf="@+id/termsProgressLabel" />
+
+        <ProgressBar
+            android:id="@+id/coursesProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:progressTint="#fea3aa"
+            android:scaleY="5"
+            app:layout_constraintEnd_toEndOf="@+id/termsProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/termsProgressBar"
+            app:layout_constraintTop_toBottomOf="@+id/coursesProgressLabel" />
+
+        <ProgressBar
+            android:id="@+id/assessmentsProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:progressTint="#baed91"
+            android:scaleY="5"
+            app:layout_constraintEnd_toEndOf="@+id/coursesProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/coursesProgressBar"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentsProgressLabel" />
+
+        <TextView
+            android:id="@+id/overallProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="70dp"
+            android:text="Overall Progress"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/termsProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Terms"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:layout_constraintStart_toStartOf="@+id/overallProgressLabel"
+            app:layout_constraintTop_toBottomOf="@+id/overallProgressBar" />
+
+        <TextView
+            android:id="@+id/coursesProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Courses"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:layout_constraintStart_toStartOf="@+id/termsProgressLabel"
+            app:layout_constraintTop_toBottomOf="@+id/termsProgressBar" />
+
+        <TextView
+            android:id="@+id/assessmentsProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Assessments"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:layout_constraintStart_toStartOf="@+id/coursesProgressLabel"
+            app:layout_constraintTop_toBottomOf="@+id/coursesProgressBar" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add_icon" />
+
+</android.support.design.widget.CoordinatorLayout>

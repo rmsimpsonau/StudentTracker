@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cfcfcf"
+    android:padding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".fragments.CourseInfoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/assessmentInfoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/assessmentInfoTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dates"
+            android:textAppearance="@android:style/TextAppearance.Holo.Small"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoType"
+            app:layout_constraintWidth_min="wrap" />
+
+        <TextView
+            android:id="@+id/courseInfoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Dates"
+            android:textAppearance="@android:style/TextAppearance.Holo.Small"
+            app:layout_constraintLeft_toRightOf="@+id/assessmentInfoTypeLabel"
+            app:layout_constraintStart_toEndOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoType" />
+
+        <TextView
+            android:id="@+id/assessmentInfoDueDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoTypeLabel" />
+
+        <TextView
+            android:id="@+id/assessmentInfoDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Status"
+            app:layout_constraintStart_toEndOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoTypeLabel" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoDueDateLabel" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Mentor Name"
+            app:layout_constraintStart_toEndOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentInfoDueDate" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorPhoneNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Phone"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorNameLabel" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Mentor Phone Number"
+            app:layout_constraintLeft_toRightOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorName" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Mentor Email"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorPhoneNumberLabel" />
+
+        <TextView
+            android:id="@+id/courseInfoMentorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Mentor Email"
+            app:layout_constraintLeft_toRightOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorPhoneNumber" />
+
+        <TextView
+            android:id="@+id/courseInfoNotesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorEmailLabel" />
+
+        <TextView
+            android:id="@+id/assessmentInfoCourseNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Notes"
+            app:layout_constraintLeft_toRightOf="@+id/courseInfoMentorPhoneNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/courseInfoMentorEmail" />
+
+        <ImageButton
+            android:id="@+id/courseAlertIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_alert_disable_icon"
+            android:tint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#cfcfcf"
+    android:padding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".activities.AssessmentDetailActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/assessmentInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assessment Title"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/assessmentInfoTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoTitle" />
+
+            <TextView
+                android:id="@+id/assessmentInfoType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Type"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                app:layout_constraintStart_toEndOf="@+id/assessmentInfoCourseNotesLabel"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoTitle" />
+
+            <TextView
+                android:id="@+id/assessmentInfoDueDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoTypeLabel" />
+
+            <TextView
+                android:id="@+id/assessmentInfoDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Due Date"
+                app:layout_constraintStart_toEndOf="@+id/assessmentInfoCourseNotesLabel"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoType" />
+
+            <TextView
+                android:id="@+id/assessmentInfoCourseNotesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Notes"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoDueDateLabel" />
+
+            <TextView
+                android:id="@+id/assessmentInfoCourseNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Course Notes"
+                app:layout_constraintStart_toEndOf="@+id/assessmentInfoCourseNotesLabel"
+                app:layout_constraintTop_toBottomOf="@+id/assessmentInfoDueDate" />
+
+            <ImageButton
+                android:id="@+id/assessmentAlertIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_alert_disable_icon"
+                android:tint="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="Assessment Alerts" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
